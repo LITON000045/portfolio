@@ -1,0 +1,269 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: #222 url('hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #ff4b2b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff416c;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 250px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Project Cards */
+.projects-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.project-desc {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+/* Button Styling */
+.btn {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #0052cc 0%, #0099cc 100%);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* filepath: c:\Users\liton\Desktop\we\style.css */
+#contact form {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: none;
+}
+
+#contact textarea {
+    min-height: 100px;
+}
+
+#whatsapp-form .btn {
+    background: linear-gradient(90deg, #25D366 0%, #128C7E 100%);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(37,211,102,0.12);
+}
+
+#whatsapp-form .btn:hover {
+    background: linear-gradient(90deg, #128C7E 0%, #25D366 100%);
+    box-shadow: 0 4px 16px rgba(37,211,102,0.18);
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Mobile menu styles */
+@media (max-width: 900px) {
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #111;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        z-index: 100;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}

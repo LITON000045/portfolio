@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liton Malakar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="logo">Liton Malakar</div>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hello, I'm Liton Malakar</h1>
+        <p>Animator, VFX Artist & Web Designer</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I specialize in Animation, VFX, and creating interactive websites. I turn ideas into reality with creativity and code.</p>
+    </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            
+            <h3>Project One</h3>
+            <iframe id="player1"  width="100%" height="180" src="https://www.youtube.com/embed/gKvjS6RIqVA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="project-card">
+            
+            <h3>Project Two</h3>
+           <iframe id="player2" width="100%" height="180" src="https://www.youtube.com/embed/G27LdcsI27o?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="project-card">
+            
+            <h3>Project Three</h3>
+<iframe id="player4" width="100%" height="180" src="https://www.youtube.com/embed/hkWVTnr3LTk?enablejsapi=1" frameborder="0" allowfullscreen></iframe> </div>
+    </div>
+</section>
+
+    
+
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="whatsapp-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send via WhatsApp</button>
+    </form>
+    <p>Email: litonmalakar80@gmail.com</p>
+    <p>Phone: 919038593784</p>
+</section>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="script.js"></script>
+
+<script>
+document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const phone = '919038593784'; // Your WhatsApp number with country code
+    const text = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
+});
+</script>
+
+    <footer>
+        <p>&copy; 2025 Liton Malakar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
