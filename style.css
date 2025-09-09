@@ -266,4 +266,12 @@ footer {
     .hamburger {
         display: flex;
     }
+/* CV Download Button */
+.btn.cv-btn {
+    background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+}
+
+.btn.cv-btn:hover {
+    background: linear-gradient(90deg, #e65100 0%, #f57c00 100%);
+}
 }
