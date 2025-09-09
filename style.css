@@ -79,6 +79,17 @@ nav ul li a {
 .btn:hover {
     background: #ff416c;
 }
+/* CV Download Button */
+.btn.cv-btn {
+    background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn.cv-btn:hover {
+    background: linear-gradient(90deg, #e65100 0%, #f57c00 100%);
+}
+
 
 /* Sections */
 section {
@@ -269,9 +280,16 @@ footer {
 /* CV Download Button */
 .btn.cv-btn {
     background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+    color: #fff;
+    font-weight: 700;
 }
 
 .btn.cv-btn:hover {
     background: linear-gradient(90deg, #e65100 0%, #f57c00 100%);
 }
+
+
+
+
+
 }
